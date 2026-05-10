@@ -1,0 +1,73 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+main{
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+}
+
+.container{
+    border: 2px solid  rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    padding: 8%;
+    
+    box-shadow: 10px 10px 15px rgba(118, 114, 114, 0.5);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.div-email , .div-senha{
+    display: flex;       
+    align-items: center;
+    gap: 10px;           
+}
+
+.div-email input , .div-senha input {
+    flex: 1;         
+    padding: 3px;      
+}
+
+header{
+    background-color:rgb(27, 204, 27);
+    padding: 30px;
+    color: white;
+    border: 2px white;
+}
+.botao-login{
+    background-color: rgb(27, 204, 27);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+footer{
+    background-color: rgb(202, 196, 190);
+    padding: 50px;
+}
+.container-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
+    list-style-type: none;
+}
+li{
+    padding: 5px;
+}
