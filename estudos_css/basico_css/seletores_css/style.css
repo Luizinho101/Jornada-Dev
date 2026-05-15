@@ -1,0 +1,42 @@
+
+/* Seletor Universal */
+*{
+    font-family: sans-serif;
+    margin: 0;
+}
+
+
+/* Seletor de Elemento */
+p{
+    margin: 2%;
+}
+h2 {
+    margin: 2%;
+    padding: 5px;
+}
+ul{
+    margin: 2%;
+}
+
+
+/* Seletor de classes */
+.class-titulo{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* Seletor de IDs */
+#titulo{
+    
+    padding: 10px;
+}
+
+
+/* Agrupamento */
+
+h1 , h2 {
+    color: aqua;
+}
+

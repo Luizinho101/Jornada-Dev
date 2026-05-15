@@ -1,0 +1,23 @@
+
+h2{
+    color:  #a9a9a9;
+}
+
+.card-projeto{
+    background-color: rgb(208, 203, 203);
+}
+
+#projeto-destaque{
+    border:  2px  solid black;
+}
+p strong{
+    color: aqua;
+}
+
+.link-nav.ativo{
+    color: darkgreen;
+}
+
+span.tag.tech-backend {
+    color: aqua;
+}
