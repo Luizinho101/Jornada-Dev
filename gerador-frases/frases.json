@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "frase": "A persistência é o caminho do êxito.",
+    "autor": "Charles Chaplin",
+    "categoria": "Motivacional"
+  },
+  {
+    "id": 2,
+    "frase": "O sucesso é ir de fracasso em fracasso sem perder o entusiasmo.",
+    "autor": "Winston Churchill",
+    "categoria": "Sucesso"
+  },
+  {
+    "id": 3,
+    "frase": "No meio da dificuldade encontra-se a oportunidade.",
+    "autor": "Albert Einstein",
+    "categoria": "Inspiração"
+  },
+  {
+    "id": 4,
+    "frase": "A única maneira de fazer um excelente trabalho é amar o que você faz.",
+    "autor": "Steve Jobs",
+    "categoria": "Trabalho"
+  },
+  {
+    "id": 5,
+    "frase": "Tudo o que a mente humana pode conceber e acreditar, ela pode conquistar.",
+    "autor": "Napoleon Hill",
+    "categoria": "Mentalidade"
+  }
+]

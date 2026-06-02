@@ -1,0 +1,21 @@
+ body {
+    margin: 0;
+    height: 100vh; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    background: #f0f0f0;
+  }
+
+.container{
+    border: 2px black solid;
+    padding: 5%;
+    border-radius: 10px;
+}
+
+button{
+    background-color: rgb(5, 153, 202);
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
