@@ -1,0 +1,53 @@
+/* 1. Variáveis para facilitar a escrita */
+:root {
+    --primary-color: #1abc9c;
+    --bg-color: #f4f4f9;
+    --text-color: #333;
+    --shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o corpo ocupe a tela toda */
+}
+
+main {
+    flex: 1; /* Faz o conteúdo principal "empurrar" o footer para baixo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 350px; /* Responsivo: 90% em telas pequenas, no máximo 350px */
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    text-align: center;
+}
+
+/* Estilizando o formulário sem <br> */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaço entre os elementos */
+    margin-top: 20px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline-color: var(--primary-color);
+}

@@ -1,0 +1,39 @@
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+main{
+    flex: 1;
+}
+.card{
+    flex: 1;
+    padding: 30px;
+    width: 25%;
+    min-width: 300px;
+    margin: 2%;
+    border-radius: 10px;
+
+    box-shadow: 10px 10px 15px rgba(118, 114, 114, 0.5),
+    -10px -10px 15px rgba(118, 114, 114, 0.5);
+}
+
+.container-galeria {
+    display: flex;       
+    flex-wrap: wrap;    
+    justify-content: center; 
+    padding: 20px;
+}
+
+.card-imagem{
+    max-width: 800px;
+}
+.imagem{
+    display: flex;
+    flex: 1;
+    width: 100%;
+    
+}

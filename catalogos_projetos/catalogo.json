@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "titulo": "Gerador de CPF",
+    "descricao": "Aplicação desenvolvida com JavaScript para validar e gerar CPFs reais.",
+    "imagem": "img/img-gerador-cpf.png",
+    "link": "https://github.com/Luizinho101/Gerador_de_CPFs"
+  },
+  {
+    "id": 2,
+    "titulo": "CheckDoc API",
+    "descricao": "API em Node.js para validação de documentos e integração de serviços.",
+    "imagem": "https://tse3.mm.bing.net/th/id/OIP.9EOZoTG2-UNOr29WPzieEAHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "link": "https://github.com/seu-usuario/projeto2"
+  },
+  {
+    "id": 3,
+    "titulo": "E-commerce Logistics",
+    "descricao": "Sistema de gestão logística para vendedores da Shopee.",
+    "imagem": "https://tse2.mm.bing.net/th/id/OIP.uX5TRNEcObdIwYcn7wq6LgHaHa?r=0&w=626&h=626&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "link": "https://github.com/seu-usuario/projeto3"
+  }
+]
