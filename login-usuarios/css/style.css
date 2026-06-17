@@ -3,71 +3,114 @@ body {
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
-    font-family: sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    background-color: #f9f9f9; 
 }
 
-main{
-    flex: 1;
+header {
+    background-color: rgb(27, 204, 27);
+    padding: 20px 50px; 
+    color: white;
+    font-weight: bold;
+}
 
+main {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5%;
+    margin: 20px;
 }
 
-.container{
-    border: 2px solid  rgb(255, 255, 255);
+.container {
+    background-color: white; 
     border-radius: 10px;
-    width: 90%;
+    width: 100%;
     max-width: 400px;
-    padding: 8%;
-    
-    box-shadow: 10px 10px 15px rgba(118, 114, 114, 0.5);
+    padding: 40px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    box-sizing: border-box; 
 }
-form{
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+form {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 20px;
 }
-.div-email , .div-senha{
+
+
+.div-email, .div-senha {
     display: flex;       
-    align-items: center;
-    gap: 10px;           
+    flex-direction: column;
+    gap: 8px;          
 }
 
-.div-email input , .div-senha input {
-    flex: 1;         
-    padding: 3px;      
+.div-email label, .div-senha label {
+    color: #555;
+    font-size: 14px;
+    font-weight: 600;
 }
 
-header{
-    background-color:rgb(27, 204, 27);
-    padding: 30px;
-    color: white;
-    border: 2px white;
+.div-email input, .div-senha input {
+    padding: 10px;      
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
 }
-.botao-login{
+
+
+.div-email input:focus, .div-senha input:focus {
+    border-color: rgb(27, 204, 27);
+}
+
+.botao-login {
     background-color: rgb(27, 204, 27);
     color: white;
     border: none;
-    border-radius: 10px;
-    padding: 10px;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 10px;
 }
 
-footer{
-    background-color: rgb(202, 196, 190);
-    padding: 50px;
+
+.botao-login:hover {
+    background-color: rgb(20, 160, 20);
 }
-.container-footer{
+
+footer {
+    background-color: rgb(202, 196, 190);
+    padding: 30px 20px;
+    color: #444;
+    font-size: 14px;
+}
+
+.container-footer {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-ul{
+ul {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center; 
 }
-li{
+
+li {
     padding: 5px;
 }

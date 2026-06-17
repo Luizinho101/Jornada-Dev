@@ -15,6 +15,17 @@ Content-Type: application/json
     "numeracao": 40
 }
 
+
+### Criar um produto
+POST http://localhost:3000/api/produtos
+Content-Type: application/json
+
+{
+    "nome": "Chuteira de Campo ",
+    "descricao": "Trava baixa para gramas artificiais",
+    "numeracao": 41
+}
+
 ###
 
 ### Atualizar o produto criado (ID 1)

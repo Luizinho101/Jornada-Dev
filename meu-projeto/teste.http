@@ -1,0 +1,25 @@
+### Cadastrar um produto com sucesso
+POST http://localhost:3000/produtos
+Content-Type: application/json
+
+{
+  "nome": "Teclado Mecânico",
+  "preco": 250.00,
+  "estoque": 15
+}
+
+###
+
+### Cadastrar outro produto para testar o array crescendo
+POST http://localhost:3000/produtos
+Content-Type: application/json
+
+{
+  "nome": "Mouse Gamer",
+  "preco": 120.50,
+  "estoque": 30
+}
+
+
+### Listar todos os produtos cadastrados
+GET http://localhost:3000/produtos

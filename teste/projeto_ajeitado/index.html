@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iron Pulse Gym</title>
+  
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div id="app" class="gradient-overlay">
+    
+    <nav class="navbar anim-up anim-up-1">
+      <div class="nav-logo">
+        <i data-lucide="zap" class="icon-brand"></i> 
+        <span class="font-display logo-text">IRON PULSE</span>
+      </div>
+      <div class="nav-links">
+        <a href="#features">Benefícios</a>
+        <a href="#plans">Planos</a>
+        <a href="#contact">Contato</a>
+      </div>
+    </nav>
+
+    <section class="hero-section">
+      <h1 class="font-display hero-title">IRON PULSE GYM</h1>
+      <p class="hero-subtitle">
+        Supere seus limites. Transforme seu corpo. Conquiste sua melhor versão.
+      </p>
+      <button class="btn-primary accent-glow anim-up anim-up-4">
+        Comece Agora
+      </button>
+    </section>
+
+    <section id="features" class="container section-padding">
+      <h2 class="font-display section-title">Por que escolher a Iron Pulse?</h2>
+      
+      <div class="grid-three-cols">
+        <div class="card-hover feature-card">
+          <i data-lucide="dumbbell" class="icon-feature"></i>
+          <h3 class="card-title">Equipamentos Premium</h3>
+          <p class="card-text">Máquinas de última geração e pesos livres para todos os níveis.</p>
+        </div>
+        <div class="card-hover feature-card">
+          <i data-lucide="users" class="icon-feature"></i>
+          <h3 class="card-title">Personal Trainers</h3>
+          <p class="card-text">Profissionais certificados para guiar sua evolução.</p>
+        </div>
+        <div class="card-hover feature-card">
+          <i data-lucide="clock" class="icon-feature"></i>
+          <h3 class="card-title">Aberto 24h</h3>
+          <p class="card-text">Treine no seu horário, sem desculpas.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="plans" class="container section-padding">
+      <h2 class="font-display section-title">Planos</h2>
+      
+      <div class="grid-three-cols">
+        <div class="card-hover plan-card">
+          <div class="plan-content">
+            <h3 class="font-display plan-name">BÁSICO</h3>
+            <p class="plan-price">R$89</p>
+            <p class="plan-period">/mês</p>
+            <ul class="plan-features">
+              <li><i data-lucide="check" class="icon-check"></i>Acesso à musculação</li>
+              <li><i data-lucide="check" class="icon-check"></i>Vestiários</li>
+              <li class="disabled"><i data-lucide="x" class="icon-x"></i>Aulas coletivas</li>
+            </ul>
+          </div>
+          <button class="btn-secondary">Escolher</button>
+        </div>
+
+        <div class="card-hover plan-card plan-card-featured">
+          <span class="badge-popular">Popular</span>
+          <div class="plan-content">
+            <h3 class="font-display plan-name">PRO</h3>
+            <p class="plan-price">R$139</p>
+            <p class="plan-period">/mês</p>
+            <ul class="plan-features">
+              <li><i data-lucide="check" class="icon-check"></i>Acesso completo</li>
+              <li><i data-lucide="check" class="icon-check"></i>Aulas coletivas</li>
+              <li><i data-lucide="check" class="icon-check"></i>Avaliação física</li>
+            </ul>
+          </div>
+          <button class="btn-primary">Escolher</button>
+        </div>
+
+        <div class="card-hover plan-card">
+          <div class="plan-content">
+            <h3 class="font-display plan-name">ELITE</h3>
+            <p class="plan-price">R$199</p>
+            <p class="plan-period">/mês</p>
+            <ul class="plan-features">
+              <li><i data-lucide="check" class="icon-check"></i>Tudo do PRO</li>
+              <li><i data-lucide="check" class="icon-check"></i>Personal trainer</li>
+              <li><i data-lucide="check" class="icon-check"></i>Nutricionista</li>
+            </ul>
+          </div>
+          <button class="btn-secondary">Escolher</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section-padding">
+      <h2 class="font-display section-title">Fale Conosco</h2>
+      
+      <form id="contact-form" class="contact-form">
+        <div class="form-group">
+          <label for="name" class="sr-only">Nome</label>
+          <input id="name" type="text" required placeholder="Seu nome" class="form-input">
+        </div>
+        <div class="form-group">
+          <label for="email" class="sr-only">Email</label>
+          <input id="email" type="email" required placeholder="Seu email" class="form-input">
+        </div>
+        <div class="form-group">
+          <label for="message" class="sr-only">Mensagem</label>
+          <textarea id="message" rows="4" required placeholder="Sua mensagem" class="form-input resize-none"></textarea>
+        </div>
+        <button type="submit" class="btn-primary btn-block">
+          Enviar Mensagem
+        </button>
+      </form>
+      
+      <p id="form-msg" class="form-success-msg hidden">
+        Mensagem enviada com sucesso!
+      </p>
+    </section>
+
+    <footer class="footer">
+      &copy; 2026 Iron Pulse Gym. Todos os direitos reservados.
+    </footer>
+
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
