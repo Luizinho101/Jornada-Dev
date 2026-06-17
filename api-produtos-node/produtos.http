@@ -1,29 +1,33 @@
 
 
-GET http://localhost:3000/lista
+### Listar todos os produtos (Começa como um array vazio: [])
+GET http://localhost:3000/api/produtos
 
 ###
 
-POST http://localhost:3000/lista
+### Criar um produto
+POST http://localhost:3000/api/produtos
 Content-Type: application/json
 
 {
-    "nome": "Tênis Esportivo",
-    "descricao": "Ideal para corrida",
-    "numeracao": 42
+    "nome": "Chuteira de Campo",
+    "descricao": "Trava alta para gramados naturais",
+    "numeracao": 40
 }
 
 ###
 
-PUT http://localhost:3000/lista/1
+### Atualizar o produto criado (ID 1)
+PUT http://localhost:3000/api/produtos/1
 Content-Type: application/json
 
 {
-    "nome": "Tênis de Corrida Atualizado",
-    "descricao": "Nova descrição do tênis",
-    "numeracao": 43
+    "nome": "Chuteira Profissional",
+    "descricao": "Trava alta com amortecimento",
+    "numeracao": 40
 }
 
 ###
 
-DELETE http://localhost:3000/lista/1
+### Deletar o produto (ID 1)
+DELETE http://localhost:3000/api/produtos/1
