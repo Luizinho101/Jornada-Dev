@@ -1,0 +1,29 @@
+
+
+GET http://localhost:3000/lista
+
+###
+
+POST http://localhost:3000/lista
+Content-Type: application/json
+
+{
+    "nome": "Tênis Esportivo",
+    "descricao": "Ideal para corrida",
+    "numeracao": 42
+}
+
+###
+
+PUT http://localhost:3000/lista/1
+Content-Type: application/json
+
+{
+    "nome": "Tênis de Corrida Atualizado",
+    "descricao": "Nova descrição do tênis",
+    "numeracao": 43
+}
+
+###
+
+DELETE http://localhost:3000/lista/1
