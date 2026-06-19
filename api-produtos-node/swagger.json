@@ -1,0 +1,97 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "API de Produtos",
+    "version": "1.0.0",
+    "description": "Uma API de produtos organizada em MVC com validação AJV e documentada com Swagger"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000/api",
+      "description": "Servidor Local"
+    }
+  ],
+  "paths": {
+    "/produtos": {
+      "get": {
+        "summary": "Retorna a lista de todos os produtos",
+        "responses": {
+          "200": {
+            "description": "Lista de produtos retornada com sucesso."
+          }
+        }
+      },
+      "post": {
+        "summary": "Cria um novo produto",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": ["nome", "numeracao"],
+                "properties": {
+                  "nome": { "type": "string", "example": "Chuteira de Campo" },
+                  "descricao": { "type": "string", "example": "Trava alta para gramados" },
+                  "numeracao": { "type": "integer", "example": 40 }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": { "description": "Produto criado com sucesso." },
+          "400": { "description": "Dados inválidos enviados." }
+        }
+      }
+    },
+    "/produtos/{id}": {
+      "put": {
+        "summary": "Atualiza um produto existente pelo ID",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": { "type": "integer" }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": ["nome", "numeracao"],
+                "properties": {
+                  "nome": { "type": "string" },
+                  "descricao": { "type": "string" },
+                  "numeracao": { "type": "integer" }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": { "description": "Produto atualizado com sucesso." },
+          "404": { "description": "Produto não encontrado." }
+        }
+      },
+      "delete": {
+        "summary": "Exclui um produto pelo ID",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": { "type": "integer" }
+          }
+        ],
+        "responses": {
+          "204": { "description": "Produto deletado com sucesso." },
+          "404": { "description": "Produto não encontrado." }
+        }
+      }
+    }
+  }
+}
